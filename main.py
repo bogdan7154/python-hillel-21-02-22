@@ -1,1 +1,1 @@
-print("bogdan")
+input("введите число")
