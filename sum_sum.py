@@ -8,7 +8,7 @@ while True:
         print(total)
         break
         # тут мы применяем replace так как  если в строке есть точка, то isnumeric вернет False
-    elif text.replace('.', '').isnumeric():
+    elif text.replace('.', '').isdigit() or (text.startswith('-') and text[1:].replace('.', '').isdigit()):
         # если значение число то оно плюсюется к переменной total
         total += float(text)
         # иначе программа выдаст пользователю о не коректном вводе
