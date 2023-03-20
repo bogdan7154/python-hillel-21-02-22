@@ -1,6 +1,6 @@
 # удаляем символы пунктуации и пробелы с правой стороны
 def line_magic(comment):
-    ban_symbols = ['.', ',', '-', ':', ';', '?', '!']
+    ban_symbols = ['.', ',', '-', ':', ';', '?', '!', '(', ')']
     for i in range(len(ban_symbols)):
         comment = comment.lower().replace(ban_symbols[i], "")
     return comment.rstrip()
